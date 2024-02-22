@@ -21,7 +21,7 @@ const App = () => {
 				isDarkMode={isDarkMode}
 				onDarkModeClick={handleDarkModeClick}
 			/>
-			<ShoppingList items={items} onItemSubmit={handleItemSubmit} />
+			<ShoppingList items={items} onItemFormSubmit={handleItemSubmit} />
 		</div>
 	)
 }

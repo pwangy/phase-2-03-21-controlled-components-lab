@@ -6,7 +6,7 @@ const initialState = {
   cateogry: ''  
 }
   
-const ItemForm = ({ onItemSubmit }) => {
+const ItemForm = ({ onItemFormSubmit }) => {
   const [itemForm, setItemForm] = useState(initialState)
 
   const handleChange = e => {
@@ -18,7 +18,7 @@ const ItemForm = ({ onItemSubmit }) => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    onItemSubmit({
+    onItemFormSubmit({
       id: uuid(),
       ...itemForm
     })
